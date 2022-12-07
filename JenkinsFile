@@ -7,8 +7,9 @@ pipeline {
              }
              post {
                  always {
-                     jiraSendBuildInfo site: 'firstjirasite.atlassian.net'
+                     jiraSendBuildInfo site: 'asthaopendeveops.atlassian.net'
                  }
              }
          }
      }
+ }
