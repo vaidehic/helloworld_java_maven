@@ -27,7 +27,7 @@ pipeline{
         stage('Sonar Analysis') {
             steps {
                 // use the SonarQube Scanner to analyze the project
-                withSonarQubeEnv('SonarQubeScanner') {
+                withSonarQubeEnv('SonarQubeServer') {
                     bat 'mvn sonar:sonar'
                 }
             }
