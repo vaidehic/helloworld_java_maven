@@ -34,5 +34,4 @@ pipeline{
         }
     }
 }
-Footer
-© 2023 GitHub, Inc.
+
