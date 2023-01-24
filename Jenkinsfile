@@ -37,6 +37,17 @@ pipeline{
                 waitForQualityGate abortPipeline: true
             }
     }
+        stage("Jacoco"){
+        steps{
+            jacoco(
+                   execPattern: '**/path_to_file/jacoco.exec',
+                   classPattern: '**/coverage/**',
+                   sourcePattern: '**/coverage/**',
+                   inclusionPattern: '**/*.class'
+)
+        }
+        }
+            
 }
 
 }
