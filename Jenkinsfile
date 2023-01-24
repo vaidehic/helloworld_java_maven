@@ -4,13 +4,7 @@ pipeline{
         maven "Maven 3.6.3"
         jdk "JDK-11"
     }       
-    stages {
-//         stage('Checkout') {
-//             steps {
-//                 // Get some code from a GitHub repository
-//                 git 'https://github.com/Mangesh-Suryawanshi/competencyTracker.git'
-//             }
-//         }
+    stages {       
         stage('Initialize'){
             steps{
                 echo "PATH = ${M2_HOME}/bin:${PATH}"
