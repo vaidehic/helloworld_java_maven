@@ -30,11 +30,11 @@ pipeline{
                 waitForQualityGate abortPipeline: true
             }
     }   
-        stage("Upload Artifact) {
+        stage('Upload Artifact') {
               steps {
                   script{
                       def server = Artifactory.server 'JfrogServer'
-                      def uploadSpec = ""{ 
+                      def uploadSpec = """{ 
                           "files":[
                               {
                                   "pattern":"target./*.jar",
