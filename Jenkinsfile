@@ -11,7 +11,6 @@ pipeline{
                 echo "M2_HOME = /opt/maven"
             }
         }
-
         stage('Compile'){
             steps{
                 echo "COMPILE"
@@ -30,10 +29,6 @@ pipeline{
             steps {
                 waitForQualityGate abortPipeline: true
             }
-    }
-        
-        
-            
+    }          
 }
-
 }
