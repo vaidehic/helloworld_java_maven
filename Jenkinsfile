@@ -16,11 +16,7 @@ pipeline{
                  echo 'Building...'
              }
      }
-             post {
-                 always {
-                     jiraSendBuildInfo site: 'https://firstjirasite.atlassian.net/'
-                 }
-             }
+             
          
        
         stage('Compile'){
@@ -45,4 +41,9 @@ pipeline{
        
                           
 }
+    post {
+                 always {
+                     jiraSendBuildInfo site: 'https://firstjirasite.atlassian.net/'
+                 }
+             }
 }
