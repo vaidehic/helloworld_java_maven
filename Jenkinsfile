@@ -18,7 +18,7 @@ pipeline{
          }
          stage('Deploy - Staging') {
              when {
-                 branch 'master'
+                 branch 'Hel-1'
              }
              steps {
                  echo 'Deploying to Staging from master...'
@@ -31,7 +31,7 @@ pipeline{
          }
          stage('Deploy - Production') {
             when {
-                branch 'master'
+                branch 'Hel-1'
             }
             steps {
                 echo 'Deploying to Production from master...'
