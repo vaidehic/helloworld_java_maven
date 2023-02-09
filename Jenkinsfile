@@ -12,7 +12,7 @@ pipeline{
              }
              post {
                  always {
-                     jiraSendBuildInfo site: 'https://firstjirasite.atlassian.net'
+                     jiraSendBuildInfo site: 'https://firstjirasite.atlassian.net' , branch: 'FIR-4'
                  }
              }
          }
